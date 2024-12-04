@@ -1,0 +1,368 @@
+body{
+
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #0b0b0b;
+}
+ .nav-link{
+    color: white;
+ }
+ .navbar-nav .nav-link {
+    color: white;
+}
+
+
+
+.Hero {
+   
+    background-image: url('../images/Frame\ 8.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.btn{
+    border-radius: 40px;
+    border-color: white;
+    color: white;
+}
+
+.enquirysection{
+    padding-top: 60px;
+    padding-bottom :60px;
+}
+.seller{
+    border-radius: 4px; 
+    
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-image: url('../images/Frame\ 15.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buyer{
+    border-radius: 4px;
+   
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-image: url('../images/Frame\ 141.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    box-shadow: 10px;
+    border-radius: 10px;
+}
+
+.custom-nav{
+  
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+
+    
+}
+
+.owl-prev{
+    border-radius: 50%;
+    position: relative;
+    bottom: 123px;
+    z-index: 9;
+    left: -12px;
+}
+
+.owl-next{
+    border-radius: 50%;
+    position: relative;
+    bottom: 123px;
+    z-index: 9;
+    left: 12px;
+}
+
+.categoryYouMayLike{
+   padding-top: 60px;
+   padding-bottom :60px;
+   background-color: #F5F9FF;
+}
+
+.rowcategory{
+    margin-top: 40px;
+}
+.extra-line{
+    border-bottom: 3px solid #0068C8;
+    
+    transform: translateY(17px);
+    width:344px
+   
+}
+
+.header-search{
+    background-color: #0b0b0b;
+}
+
+.productsYouMayLike{
+    padding-top: 60px;
+    padding-bottom :60px;
+}
+
+.productsYouMayLike .extra-line{
+    border-bottom: 3px solid #0068C8;
+    width: 100px;
+    transform: translateY(17px);
+    width:330px
+}
+
+.send-enquiry-btn{
+    border-radius: 4px;
+}
+
+.product-box{
+    margin-top: 40px;
+}
+
+.product-box h5{
+    color: #666666;
+    margin-top: 16px;
+}
+
+.product-box h4{
+    margin-top: 12px;
+}
+
+.product-box .d-flex{
+    margin-top: 24px;
+}
+.product-box h3{
+    color: #E70000;
+    margin-top: 24px;
+}
+.product-box .send-enquiry-btn{
+    margin-top: 43px;
+}
+
+.Arrival-Box .image{
+    border-radius: 10px;
+}
+.Famous-Box .image{
+    border-radius: 10px;
+}
+
+.Arrival-Famous{
+    background-color: #F5F9FF;
+    padding-top: 60px;
+    padding-bottom :60px;
+}
+
+.Arrival-Box{
+    margin-top: 40px;
+  
+}
+
+
+
+.Arrival-Famous .extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width:170px
+}
+
+.Famous-Box{
+    margin-top: 40px
+}
+
+.custom-nav2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.BuyerandSeller{
+    padding-top: 60px;
+    padding-bottom :60px;
+}
+
+.BuyerandSeller form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.BuyerandSeller .row{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.FindSellersByCity{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F5F9FF;
+}
+
+.FindSellersByCity .extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 275px;
+}
+
+.FindSellersByCity .row{
+    margin-top: 40px;
+}
+
+.Testimony{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+
+.Testimony .description{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #999;
+}
+
+.Blogs{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F5F9FF;
+}
+
+.reviewer{
+    margin-top:30px ;
+    margin-bottom: 30px;
+}
+
+.reviewer-name{
+    color: #0068C8;
+}
+
+.blogcarousel{
+    margin-top: 40px
+}
+
+.Blogs .heading{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.Blogs .description{
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.Blogs .commentbox{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.owl-nextll{
+    border-radius: 50%;
+    position: relative;
+    bottom: 280px;
+    z-index: 9;
+    left: 12px;
+}
+
+.owl-prevll{
+    border-radius: 50%;
+    position: relative;
+    bottom: 280px;
+    z-index: 9;
+    left: -12px;
+}
+
+.App{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.App h5{
+    color: #999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tradeshowcrousel h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tradeshow-prev{
+    border-radius: 50%;
+    position: relative;
+    bottom: 190px;
+    z-index: 9;
+    left: -12px;
+}
+
+.tradeshow-next{
+    border-radius: 50%;
+    position: relative;
+    bottom: 190px;
+    z-index: 9;
+    left: 12px;
+}
+
+.Tradeshow{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F5F9FF;
+}
+
+.tradeshowcrousel{
+    margin-top: 40px;
+}
+
+.Tradeshow .extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 170px;
+}
+
+.popular-tag-button{
+    border-radius: 4px;
+    border-color:#0068C8;
+    color: #0068C8;
+}
+
+.popular-tag-button:hover{
+    color: white;
+}
+
+.Popular-tags{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Popular-tags .extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 182px;
+}
+
+footer{
+    background-color: #0b0b0b;
+    
+}
+
+footer .col-md-4{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footernav{
+    color: white;
+}
