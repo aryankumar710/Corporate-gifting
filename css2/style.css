@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+
 body{
 
     overflow-x: hidden;
@@ -11,6 +17,14 @@ header{
  }
  .navbar-nav .nav-link {
     color: white;
+}
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    background-color: #0b0b0b;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
 }
 
 
@@ -29,10 +43,18 @@ header{
     color: white;
 }
 
-.enquirysection{
-    padding-top: 60px;
-    padding-bottom :60px;
+.wrapper{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
 }
+
+.wrapper-background{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    background-color: #F5F9FF;
+}
+
+
 .seller{
     border-radius: 4px; 
     
@@ -85,11 +107,6 @@ header{
     left: 12px;
 }
 
-.categoryYouMayLike{
-   padding-top: 60px;
-   padding-bottom :60px;
-   background-color: #F5F9FF;
-}
 
 .rowcategory{
     margin-top: 40px;
@@ -98,7 +115,7 @@ header{
     border-bottom: 3px solid #0068C8;
     
     transform: translateY(17px);
-    width:344px
+    width:21.5rem;
    
 }
 
@@ -106,16 +123,12 @@ header{
     background-color: #0b0b0b;
 }
 
-.productsYouMayLike{
-    padding-top: 60px;
-    padding-bottom :60px;
-}
 
 .productsYouMayLike .extra-line{
     border-bottom: 3px solid #0068C8;
     width: 100px;
     transform: translateY(17px);
-    width:330px
+    width:330px;
 }
 
 .send-enquiry-btn{
@@ -153,11 +166,7 @@ header{
     border-radius: 10px;
 }
 
-.Arrival-Famous{
-    background-color: #F5F9FF;
-    padding-top: 60px;
-    padding-bottom :60px;
-}
+
 
 .Arrival-Box{
     margin-top: 40px;
@@ -189,10 +198,7 @@ header{
     margin-left: 25px;
     margin-right: 25px;
 }
-.BuyerandSeller{
-    padding-top: 60px;
-    padding-bottom :60px;
-}
+
 
 .BuyerandSeller form{
     display: flex;
@@ -207,11 +213,7 @@ header{
 
 }
 
-.FindSellersByCity{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F5F9FF;
-}
+
 
 .FindSellersByCity .extra-line{
     border-bottom: 3px solid #0068C8;
@@ -223,10 +225,6 @@ header{
     margin-top: 40px;
 }
 
-.Testimony{
-    padding-top: 60px;
-    padding-bottom: 60px; 
-}
 
 .Testimony .description{
     margin-top: 30px;
@@ -234,11 +232,7 @@ header{
     color: #999;
 }
 
-.Blogs{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F5F9FF;
-}
+
 
 .reviewer{
     margin-top:30px ;
@@ -284,10 +278,7 @@ header{
     left: -12px;
 }
 
-.App{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 .App h5{
     color: #999;
@@ -316,11 +307,7 @@ header{
     left: 12px;
 }
 
-.Tradeshow{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F5F9FF;
-}
+
 
 .tradeshowcrousel{
     margin-top: 40px;
@@ -342,10 +329,7 @@ header{
     color: white;
 }
 
-.Popular-tags{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 .Popular-tags .extra-line{
     border-bottom: 3px solid #0068C8;
