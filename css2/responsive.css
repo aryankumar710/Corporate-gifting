@@ -1,0 +1,17 @@
+@media(max-width:1400px){
+    .products .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .products .row .col-lg-8{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .Category-content-products .products img{
+        height: 100%;
+        width: 100%;
+        }
+
+       
+
+}
