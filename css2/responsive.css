@@ -8,8 +8,9 @@
         margin-top: 1.5rem;
     }
     .Category-content-products .products img{
-        height: 100%;
         width: 100%;
+        object-fit: cover;
+        height: 80%;
         }
 
        
@@ -130,20 +131,31 @@
 
 @media (max-width:992px){
     html{
-        font-size: 15.5px;
+        font-size: 15px;
     }
 }
 
 @media (max-width:768px){
     html{
-        font-size: 15px;
+        font-size: 14px;
     }
 
 @media (max-width:576px){
     html{
-        font-size: 14px;
+        font-size: 13px;
     }
     
 }
 }
 
+@media (max-width: 768px) {
+    .button-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff; /* Optional: Add a background color */
+      padding: 10px; /* Add padding for spacing */
+      z-index: 1000; /* Ensure it stays above other content */
+    }
+}  
