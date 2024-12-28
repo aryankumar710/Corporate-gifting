@@ -678,8 +678,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-
-
 .Category-content-products .products h3 {
     margin-bottom: 1.5rem;
     color: var(--red-color);
@@ -856,8 +854,8 @@ p {
 }
 
 .rate-images2 img{
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 0.25rem;
 }
 
