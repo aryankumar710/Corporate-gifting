@@ -432,8 +432,23 @@ h1 {
 .FindSellersByCity .city-images {
     width: 6.25rem;
     height: 6.25rem;
+    object-fit:fill;
     border-radius: 100%;
 }
+
+.FindSellersByCity .city-name h4 {
+    color: var(--black-color);
+}
+
+.FindSellersByCity .city-name:hover h4 {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.FindSellersByCity .city-name:hover .city-images {
+    border: 4px solid var(--secondary-color);
+}
+
 
 .Testimony .description {
     margin-top: 1.875rem;
