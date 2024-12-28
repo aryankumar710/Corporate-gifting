@@ -136,8 +136,8 @@ li:hover {
 
 .btn-outline-primary:hover {
     color: var(--white-color);
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
     border-radius: 0.25rem;
 }
 
@@ -758,7 +758,7 @@ h1 {
 }
 
 .gap-product-detail2 h6 {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .gap-product-detail2 h3 {
