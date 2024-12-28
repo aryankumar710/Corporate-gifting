@@ -1,4 +1,4 @@
-@media(max-width:1400px){
+/*@media(max-width:1400px){
     .products .row {
         display: flex;
         flex-direction: column;
@@ -6,14 +6,16 @@
     .products .row .col-lg-8{
         width: 100%;
         margin-top: 1.5rem;
+       
     }
     .Category-content-products .products img{
         width: 100%;
         object-fit: cover;
         height: 80%;
+        margin-bottom: 0.8rem;
         }
 
-}
+}*/
 
 
 @media (max-width:1200px){
