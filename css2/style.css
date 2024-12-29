@@ -325,7 +325,6 @@ h1 {
     border-color: var(--primary-color);
 }
 
-
 .rowcategory {
     margin-top: 2.5rem;
 }
@@ -596,13 +595,6 @@ h1 {
     color: var(--white-color);
 }
 
-.Category-content-products .products img {
-    border-radius: 0.25rem;
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
 .Category-content .col-md-8 {
     overflow-x: auto;
 }
@@ -655,9 +647,10 @@ h1 {
 }
 
 .Category-content-products .products img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    border-radius: 0.25rem;
     width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 .Category-content-products .products h6 {
