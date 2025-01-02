@@ -982,3 +982,23 @@ p {
 .category-items .top-heading {
     margin-top: 1.875rem;
 }
+
+/* Blog Page */
+
+.extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 12.5rem;
+   
+}
+
+/* Blog Detail Page */
+
+.heading {
+    color: #0b0b0b;
+    font-family: Catamaran;
+    font-weight: 500;
+    font-size: 36px;
+    height: 100px;
+    width: 744px;
+}
