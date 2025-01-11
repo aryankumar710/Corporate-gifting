@@ -1015,30 +1015,6 @@ p {
     border-radius: 10px;
 }
 
-/* .content {
-    width: 100%;
-    height: auto;
-    font-family: Catamaran;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: justify;
-    line-height: 26px;
-    text-justify: inter-word;
-} */
-
-/* .section-image2 img {
-    width: 33.33%;
-    height: auto;
-    border-radius: 4px;
-} */
-
-/* .content2 {
-    width: 100%;
-    height: auto;
-    text-align: justify;
-    text-justify: inter-word;
-} */
-
 .user-quote {
     background-color: #F5F9FF;
 }
@@ -1048,74 +1024,6 @@ p {
     height: 100px; 
     border-radius: 50%;
 }
-
-/* .comments img {
-    width: 64px;
-    height: 64px;
-} */
-
-/* .row2 h3 {
-    width: 148px;
-    height: 39px;
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 39px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-} */
-
-/* .comments-details h5 {
-    font-size: 18px;
-    text-align: left;
-} */
-
-/* .comments-details h6 {
-    font-size: 16px;
-    text-align: left;
-    font-family: Catamaran;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    color: #666666;
-}
-
-.comments-details p {
-    font-family: Epilogue;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.6px;
-    text-decoration-skip-ink: none;
-    color: #666666;
-} */
-
-/* .comments-details i {
-    font-size: 14px;
-} */
-
-/* .comment-leave h3 {
-    width: 211px;
-    height: 39px;
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 39px;
-    text-align: left;
-    text-decoration-skip-ink: none;
-} */
-
-/* .comment-leave h5 {
-    width: 525px;
-    height: 27px;
-    font-family: Catamaran;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    text-align: left;
-    text-decoration-skip-ink: none;
-    color: #666666;
-} */
 
 .blogcomment {
     width: 100%;
