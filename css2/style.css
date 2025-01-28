@@ -993,7 +993,7 @@ p {
 
 /* Blog Detail Page */
 
-.heading {
+.heading h2 {
     color: #0b0b0b;
     font-family: Catamaran;
     font-weight: 500;
@@ -1038,5 +1038,85 @@ p {
     position: absolute;
     top: 15px;
     left: 15px;
+}
+
+/* Tradeshow Page  */
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tradeshow Detail Page */
+
+.trade-website {
+    text-align: right;
+    color: blue;
+    text-decoration: none;
+}
+
+.form {
+    text-align: right;
+}
+
+.form .btn {
+    border: 1px solid #0068C8;
+}
+
+.exhibitor-profile {
+    background-color: #F5F9FF;
+}
+
+.exhibitor-profile a{
+    text-decoration: none;
+}
+
+.exhibitor-profile a p{
+    color: #0068C8;
+    font-size: 16px;
+}
+
+.visitor-profile {
+    background-color: #F5F9FF;
+}
+
+.visitor-profile a{
+    text-decoration: none;
+}
+
+.visitor-profile a p{
+    color: #0068C8;
+    font-size: 16px;
+}
+
+.venue-address {
+    background-color: #F5F9FF;
+}
+
+.venue-address img{
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 4px;
+}
+
+.review h5{
+    color: #666666;
+}
+
+.add-button{
+    text-align: right;
+}
+
+.popular-tags button{
+    border: 1px solid #0068C8;
+    background-color: white;
+    color: #0068C8;
+    border-radius: 4px;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 22px;
 }
 
