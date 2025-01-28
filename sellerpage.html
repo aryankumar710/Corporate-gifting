@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
   <meta charset="UTF-8">
 
@@ -32,9 +30,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-</head>
 
+</head>
 <body>
 
   <!--Header-->
@@ -142,184 +139,268 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a class="text-decoration-none" href="#" style="color: #0b0b0b;">Home</a></li>
-                  <li class="breadcrumb-item active d-block" aria-current="page" style="color: #0068C8;">Blog</li>
+                  <li class="breadcrumb-item active d-block" aria-current="page" style="color: #0068C8;">Seller Registration</li>
                 </ol>
             </nav>
         </div>
     </div>
   </section>
 
-  
-   <!-- Blogs -->
-  <section class="BlogsPage wrapper">
+
+  <!-- Section -->
+
+  <section>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-6">
+                <h3>How to sell on company name</h3>
+                <div>
+                    <div class="extra-line-seller"></div>
+                    <hr>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">1</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">2</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">3</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">4</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">5</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">6</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3">
+                    <div class="col-md-1">
+                        <button style="border: 1px solid black; border-radius: 50%;">7</button>
+                    </div>
+                    <div class="points col-md-11">
+                        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe perferendis voluptates veniam temporibus reiciendis.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="product-form-container">
+                    <h3>Sell your 1st product</h3>
+                    <form>
+                        <div class="mt-3 mb-3">
+                            <!-- <label for="businessEmail" class="form-label">Business email</label> -->
+                            <input type="email" class="form-control" id="businessEmail" placeholder="example@email.com" value="" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <!-- <label for="businessNumber" class="form-label">Business number</label> -->
+                            <input type="text" class="form-control" id="businessNumber" placeholder="Business number" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <!-- <label for="productName" class="form-label">Product name</label> -->
+                            <input type="text" class="form-control" id="productName" placeholder="Product name" required>
+                        </div>
+                        
+                        <div class="mb-3 row">
+                            <div class="col-md-4">
+                                <!-- <label for="price" class="form-label">Price (₹)</label> -->
+                                <input type="number" class="form-control" id="price" placeholder="₹   Price" required>
+                            </div>
+                            <div class="col-md-4">
+                                <!-- <label for="quantity" class="form-label">Quantity</label> -->
+                                <input type="number" class="form-control" id="quantity" placeholder="Quantity" required>
+                            </div>
+                            <div class="col-md-4">
+                                <!-- <label for="unit" class="form-label">Unit</label> -->
+                                <select class="form-select" id="unit" required>
+                                    <option selected disabled>Unit</option>
+                                    <option value="pcs">pcs</option>
+                                    <option value="kg">kg</option>
+                                    <option value="liters">liters</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Add Images</label>
+                            <div class="image-preview">
+                                <img src="https://via.placeholder.com/70" alt="Placeholder">
+                                <img src="https://via.placeholder.com/70" alt="Placeholder">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary my-4 px-5">Add Products</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose">
     <div class="container">
         <div class="row">
-            <h3>From Our Blogs</h3>
+            <h3>Why choose us ?</h3>
             <div>
-                <div class="extra-line"></div>
-            <hr>
+                <div class="extra-line-choose"></div>
+                <hr>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 179.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose1.jpg" class="card-img-top" alt="why-image-1">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
-            </div>
-            
-            <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 180.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 181.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose2.jpg" class="card-img-top" alt="why-image-2">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 183.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose3.jpg" class="card-img-top" alt="why-image-3">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 185.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose4.jpg" class="card-img-top" alt="why-image-1">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 186.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose5.jpg" class="card-img-top" alt="why-image-1">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
-            </div>
-            
-            <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 187.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
             </div>
 
             <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 188.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
+                <div class="card">
+                    <img src="images/whychoose6.jpg" class="card-img-top" alt="why-image-1">
+                    <div class="card-body-seller">
+                        <p class="card-text-seller mt-3">Lorem ipsum dolor sit amet consectetur. Nibh lectus augue lectus urna. Morbi nunc ut dictum facilisi eget pulvinar tristique. Semper mattis in id diam pellentesque in sodales ullamcorper enim. Turpis semper ut magna sed purus. Pulvinar mi sodales arcu malesuada eu feugiat dolor nunc.</p>
                     </div>
-                  </div>
                 </div>
-              </a>
             </div>
-
-            <div class="col-md-4 my-3">
-              <a href="blogpagedetail.html" style="text-decoration: none; color: inherit;">
-                <div class="card" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-                  <img src="images/Frame 189.png" class="card-img-top" alt="..." style="height: 300px; border-radius: 10px 10px 0px 0px;">
-                  <div class="card-body">
-                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum officiis placeat obcaecati dicta ipsum provident quae cupiditate, beatae quam doloribus voluptates nostrum alias debitis illo modi, repellendus a architecto?</p>
-                    <hr>
-                    <div class="d-flex justify-content-between px-3">
-                      <h6>June 17, 2024</h6>
-                      <h6>No Comments</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
         </div>
     </div>
   </section>
 
-  <!--Footer-->
   
-   <footer>
+  <section class="Popular-tags wrapper">
+    <div class="container">
+      <div class="top-heading pb-3 ps-0">
+        <h3>Popular Tags</h3>
+      </div>
+      <div>
+        <hr class="mt-0">
+      </div>
+      <div class="row">
+
+        <div class="mt-4">
+          <button class="btn  btn-outline-primary btn-sm m-2">Gift Cards</button>
+          <button class="btn  btn-outline-primary btn-sm  m-2">Diwali Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">New Year Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Holi Gift</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Cups</button>
+
+          <button class="btn  btn-outline-primary btn-sm m-2">Gift Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Diwali Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">New Year Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Holi Gifts</button>
+          <button class="btn btn-outline-primary btn-sm m-2">Cups</button>
+
+
+          <button class="btn  btn-outline-primary btn-sm m-2">Gift Card</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Diwali Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">New Year Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Holi Gift</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Cups</button>
+
+
+          <button class="btn  btn-outline-primary btn-sm m-2">Gift Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Diwali Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">New Year Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Holi Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Cups</button>
+
+          <button class="btn  btn-outline-primary btn-sm m-2">Gift Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Diwali Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">New Year Cards</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Holi Gifts</button>
+          <button class="btn  btn-outline-primary btn-sm m-2">Cups</button>
+
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+<!--Footer-->
+  
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start"
@@ -374,15 +455,8 @@
       </div>
     </div>
   </footer>
-  
 </body>
 </html>
-
-
-
-
-
-
 
 
 

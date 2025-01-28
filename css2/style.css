@@ -1120,3 +1120,386 @@ p {
     margin-left: 22px;
 }
 
+/* Sign-up popup */
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  #popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .popup-left {
+    background-image: url('../images/login_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  @media (min-width: 768px) {
+    .popup-left {
+      height: auto;
+    }
+  }
+
+  .popup-right {
+    padding: 20px;
+  }
+
+  .popup-right h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .input-container i {
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  .input-container i:hover {
+    color: #000;
+  }
+
+  .popup-right button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0068C8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .popup-right button:hover {
+    background-color: #005bb5;
+  }
+
+  .popup-right p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .popup-right p a {
+    font-weight: bold;
+    color: #0078d7;
+    text-decoration: none;
+  }
+
+  .popup-right p a:hover {
+    text-decoration: underline;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: #0078d7;
+  }
+
+  /* Login Pop-up */
+
+  #overlayss {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  #popupss {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .popup-left {
+    background-image: url('../images/login_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+
+  @media (min-width: 768px) {
+    .popup-left {
+      height: auto;
+    }
+  }
+
+  .popup-right {
+    padding: 20px;
+  }
+
+  .popup-right h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .popup-right form a {
+    font-weight: 600;
+    text-align: right;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .input-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+  }
+
+  .input-container i {
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  .input-container i:hover {
+    color: #000;
+  }
+
+  .popup-right button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0068C8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .popup-right button:hover {
+    background-color: #005bb5;
+  }
+
+  .popup-right p {
+    font-family: Catamaran;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22.96px;
+    text-align: left;
+  }
+
+  .popup-right p a {
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popup-right p a:hover {
+    text-decoration: underline;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: #0078d7;
+  }
+
+  /* Seller Page */
+
+  .extra-line-seller{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 22.5rem;
+}
+
+.card-body-seller .card-text-seller {
+    font-family: Catamaran;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.extra-line-choose{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 13rem;
+}
+
+.why-choose .card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .points h5 {
+        margin-left: 15px;
+    }
+}
+
+.product-form-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.image-preview {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-add {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+
+/* Buyer Page */
+
+.product-form-container2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-form-container2 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.image-preview {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-add {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+.product-form-container2 form button{
+    margin-left: auto;
+    margin-right: auto;
+}
