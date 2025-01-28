@@ -1,4 +1,54 @@
 
+//login page
+
+function openPopups() {
+    document.getElementById('overlayss').style.display = 'block';
+    document.getElementById('popupss').style.display = 'block';
+  }
+
+  function closePopupss() {
+    document.getElementById('overlayss').style.display = 'none';
+    document.getElementById('popupss').style.display = 'none';
+  }
+
+  // JS for password toggle
+  const togglePassword = document.getElementById('togglePasswordss');
+  const passwordInput = document.getElementById('passwordss');
+
+  togglePassword.addEventListener('click', () => {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+    togglePassword.classList.toggle('fa-eye-slash');
+  });
+
+
+  //signup page
+    
+    function openPopup() {
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Toggle password visibility
+    document.getElementById('togglePassword').addEventListener('click', function () {
+      const passwordInput = document.getElementById('password');
+      const type = passwordInput.type === 'password' ? 'text' : 'password';
+      passwordInput.type = type;
+      this.classList.toggle('fa-eye-slash');
+    });
+
+    document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+      const confirmPasswordInput = document.getElementById('confirmpassword');
+      const type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+      confirmPasswordInput.type = type;
+      this.classList.toggle('fa-eye-slash');
+    });
+
 //index page
 
 $(document).ready(function () {

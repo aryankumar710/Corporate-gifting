@@ -37,6 +37,67 @@
 
 <body>
 
+  <!-- Login page -->
+
+  <div id="overlayss" onclick="closePopupss()"></div>
+
+  <div id="popupss" class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="popup-left col-12 col-md-6"></div>
+      <div class="popup-right col-12 col-md-6">
+        <span class="close-btn" onclick="closePopupss()">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <div class="input-container">
+            <input type="email" id="exchangeIcon" placeholder="Email" required>
+            
+          </div>
+          <div class="input-container">
+            <input type="password" id="passwordss" placeholder="Password" required>
+            <i class="fa fa-eye" id="togglePasswordss" aria-hidden="true"></i>
+          </div>
+
+         <div class="text-end">
+          <a href="#">Forgot Password?</a>
+         </div>
+          
+          <button type="submit">Log In</button>
+        </form>
+        <p>Don't have account? <a onclick="openPopup()">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup page -->
+  <div id="overlay" onclick="closePopup()"></div>
+
+  <div id="popup" class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="popup-left col-12 col-md-6"></div>
+      <div class="popup-right col-12 col-md-6">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Register</h2>
+        <form>
+          <div class="input-container">
+            <input type="text" placeholder="Name" required>
+          </div>
+          <div class="input-container">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="input-container">
+            <input type="password" id="password" placeholder="Password" required>
+            <i class="fa fa-eye" id="togglePassword" aria-hidden="true"></i>
+          </div>
+          <div class="input-container">
+            <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+            <i class="fa fa-eye" id="toggleConfirmPassword" aria-hidden="true"></i>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a onclick="openPopups()">Sign In</a></p>
+      </div>
+    </div>
+  </div>
   <!--Header-->
 
   <header>
@@ -76,8 +137,8 @@
               </li>
             </ul>
             <div class="d-flex flex-column flex-lg-row">
-              <a class="nav-link" href="#">LOGIN</a>
-              <button class="btn btn-outline-secondary btn-sm px-3 mx-2"
+              <a class="nav-link" onclick="openPopups()">LOGIN</a>
+              <button class="btn btn-outline-secondary btn-sm px-3 mx-2" onclick="openPopup()"
                 style="border-radius: 4px; height: 36px; width: 90px;" type="button">SIGN UP</button>
             </div>
           </div>
@@ -1184,7 +1245,7 @@
               class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
         <div class="d-flex justify-content-center">
-          <a href="blogpage.html" class="btn  btn-md btn-primary " type="button">View All</a>
+          <button class="btn btn-md  btn-primary" type="button">View More</button>
         </div>
       
       </div>
