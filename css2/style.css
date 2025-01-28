@@ -1,8 +1,9 @@
 :active,
 :hover,
 :focus {
-    outline: 0 !important;
+    outline:unset;
     outline-offset: 0;
+    box-shadow: none;
 }
 
 html {
@@ -155,6 +156,45 @@ li:hover {
     border-radius: 0.25rem;
 }
 
+.form-filling .nav-link .active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.form-filling .nav-link{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.form-filling .nav-link:hover{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+
+}
+
+.form-filling .nav-link:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+
 .wrapper {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
@@ -167,8 +207,8 @@ li:hover {
 }
 
 .breadcrumb-wrapper {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--tertiary-color);
 }
 
