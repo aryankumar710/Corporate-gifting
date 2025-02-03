@@ -1066,6 +1066,7 @@ p {
 
 .exhibitor-profile {
     background-color: #F5F9FF;
+    border-radius: 10px;
 }
 
 .exhibitor-profile a{
@@ -1079,6 +1080,7 @@ p {
 
 .visitor-profile {
     background-color: #F5F9FF;
+    border-radius: 10px;
 }
 
 .visitor-profile a{
@@ -1502,4 +1504,40 @@ p {
 .product-form-container2 form button{
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* Help Page */
+
+.help-tabs li a{
+    color: #0068C8;
+    background-color: #f5f9ff;
+}
+
+.tab-content h2 {
+    font-family: Catamaran;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 47px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0B0B0B;
+}
+
+.tab-content p{
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #666666;
+}
+
+.help {
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 3.5rem;
 }
