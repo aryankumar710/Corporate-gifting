@@ -170,49 +170,68 @@
                             <li class="nav-item d-flex flex-column px-1 col-4" role="presentation">
                                 <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">Company Details</button>
+                                    aria-controls="pills-profile" aria-selected="false" disabled>Company Details</button>
                             </li>
                             <li class="nav-item d-flex flex-column px-1 col-4" role="presentation">
                                 <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">Bank Details</button>
+                                    aria-controls="pills-contact" aria-selected="false" disabled>Bank Details</button>
                             </li>
                         </ul>
                         <div class="tab-content col-12 mt-4 " id="pills-tabContent">
                             <div class="tab-pane  fade show active " id="pills-home" role="tabpanel"
                                 aria-labelledby="pills-home-tab">
-                                <div class="col-12 d-flex flex-wrap">
+                                <form class="col-12 d-flex flex-wrap needs-validation" novalidate>
                                     <div class="form-floating-label col-12 col-md-6  px-2 mb-4">
-                                        <input type="text" class="form-control col-12" id="name" placeholder=" "
+                                        <input type="text" class="form-control col-12" id="productname" placeholder=""
                                             required>
-                                        <label for="name">Product Name</label>
+                                        <label for="productname">Product Name</label>
+                                        <div class="invalid-feedback">
+                                            Please choose a username.
+                                        </div>
                                     </div>
                                     <div class=" col-12 col-md-6   px-2 mb-4">
-                                        <select id="inputState" class="form-select d-flex align-items-center">
-                                            <option selected>Product Category</option>
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Product Category</option>
                                             <option>...</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                            Please select product category.
+                                        </div>
                                     </div>
                                     <div class="form-floating-label col-12  px-2  mb-4">
                                         <input type="text" class="form-control  col-12" style="padding-bottom: 4.5rem;"
-                                            id="name" placeholder=" " required>
-                                        <label for="name">Product Description</label>
+                                            id="ProductDescription" placeholder="" required>
+                                        <label for="ProductDescription">Product Description</label>
+                                        <div class="invalid-feedback">
+                                            Please write short description about product.
+                                        </div>
                                     </div>
                                     <div class="form-floating-label col-12 col-md-4  px-2 mb-4">
-                                        <input type="text" class="form-control col-12" id="name" placeholder=" "
-                                            required>
-                                        <label for="name">Price</label>
+                                        <input type="text" class="form-control col-12" id="Quantityofeachproduct"
+                                            placeholder="" required>
+                                        <label for="Quantityofeachproduct">Quantity of each product</label>
+                                        <div class="invalid-feedback">
+                                            Please enter total quantity of each product.
+                                        </div>
                                     </div>
                                     <div class="form-floating-label col-12 col-md-4  px-2 mb-4">
-                                        <input type="text" class="form-control col-12" id="name" placeholder=" "
-                                            required>
-                                        <label for="name">Quantity</label>
+                                        <input type="text" class="form-control col-12" id="Priceinrupees"
+                                            placeholder=" " required>
+                                        <label for="Priceinrupees">Price in rupees</label>
+                                        <div class="invalid-feedback">
+                                            Please enter price of each product.
+                                        </div>
                                     </div>
                                     <div class="col-12 col-md-4 px-2 mb-4">
-                                        <select id="inputState" class="form-select d-flex align-items-center">
-                                            <option selected>Unit</option>
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Metric Unit</option>
                                             <option>...</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                            Please choose appropriate unit for your product.
+                                        </div>
+
                                     </div>
                                     <div class="col-12 d-flex  gap-3 px-2 flex-wrap">
                                         <div
@@ -268,7 +287,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
+                                                    <input class="form-check-input" type="radio" name="default" value=""
                                                         id="flexCheckDefault">
                                                 </div>
                                             </div>
@@ -279,25 +298,204 @@
                                                     </label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
+                                                    <input class="form-check-input" type="radio" name="default" value=""
                                                         id="flexCheckDefault">
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="d-flex col-md-3 mt-3 mt-md-0 col-12 flex-column">
-                                            <button class="btn btn-primary">Continue</button>
+                                            <button class="btn btn-primary" type="submit"
+                                                id="Continue1">Continue</button>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
+
+
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab">...</div>
+                                aria-labelledby="pills-profile-tab">
+                                <form class="col-12 d-flex flex-wrap needs-validation2" novalidate>
+                                    <div class="form-floating-label col-12   px-2 mb-4">
+                                        <input type="text" class="form-control col-12" id="CompanyName " placeholder=""
+                                            required>
+                                        <label for="CompanyName ">Company Name</label>
+                                        <div class="invalid-feedback">
+                                            Please enter company name.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="Businessemail"
+                                            placeholder=" " required>
+                                        <label for="Businessemail">Business email</label>
+                                        <div class="invalid-feedback">
+                                            Please enter business email.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="GSTnumber " placeholder=""
+                                            required>
+                                        <label for="GSTnumber ">GST number</label>
+                                        <div class="invalid-feedback">
+                                            Please enter GST number.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control col-12" id="PANnumber" placeholder=" "
+                                            required>
+                                        <label for="PANnumber">PAN number</label>
+                                        <div class="invalid-feedback">
+                                            Please enter PAN number.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="Businessphonenumber "
+                                            placeholder="" required>
+                                        <label for="Businessphonenumber ">Business phone number</label>
+                                        <div class="invalid-feedback">
+                                            Please enter business phone number.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 px-2 mb-4">
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Ownership Type</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please enter owrnership type.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating-label col-12 col-md-4  px-2 mb-4">
+                                        <input type="text" class="form-control col-12" id="YearofEstablishment"
+                                            placeholder="" required>
+                                        <label for="YearofEstablishment">Year of Establishment</label>
+                                        <div class="invalid-feedback">
+                                            Please enter company establishment year.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating-label col-12 col-md-4  px-2 mb-4">
+                                        <input type="text" class="form-control col-12" id="Numberofemployee"
+                                            placeholder=" " required>
+                                        <label for="Numberofemployee">Number of employee</label>
+                                        <div class="invalid-feedback">
+                                            Please enter number of employee in company.
+                                        </div>
+                                    </div>
+                                    <div class="form-floating-label col-12  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" style="padding-bottom: 4.5rem;"
+                                            id="CompanyAddress" placeholder=" " required>
+                                        <label for="CompanyAddress">Company Address</label>
+                                        <div class="invalid-feedback">
+                                            Please enter company address.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 px-2 mb-4">
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Select Country</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select country.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 px-2 mb-4">
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Select State</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select state
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 px-2 mb-4">
+                                        <select id="inputState" class="form-select d-flex align-items-center" required>
+                                            <option selected disabled value="">Select City</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select city
+                                        </div>
+                                    </div>
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="Pincode" placeholder=" "
+                                            required>
+                                        <label for="Pincode">Pincode</label>
+                                        <div class="invalid-feedback">
+                                            Please enter valid pincode.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="d-flex col-md-3 mt-3 mt-md-0 col-12 flex-column ">
+                                            <button class="btn btn-primary" id="Continue2"
+                                                type="submit">Continue</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab">...</div>
+                                aria-labelledby="pills-contact-tab">
+                                <form class="col-12 d-flex flex-wrap needs-validation" novalidate>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="AccountNumber "
+                                            placeholder="" required>
+                                        <label for="AccountNumber ">Account Number</label>
+                                        <div class="invalid-feedback">
+                                            Please enter business account number.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="IFSCCode" placeholder=" "
+                                            required>
+                                        <label for="IFSCCode">IFSC Code</label>
+                                        <div class="invalid-feedback">
+                                            Please enter IFSC Code.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="AccountHolderName"
+                                            placeholder=" " required>
+                                        <label for="AccountHolderName">Account Holder Name</label>
+                                        <div class="invalid-feedback">
+                                            Please enter account holder name.
+                                        </div>
+                                    </div>
+
+                                    <div class="form-floating-label col-12 col-md-6  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" id="BankName" placeholder=""
+                                            required>
+                                        <label for="BankName">Bank Name</label>
+                                        <div class="invalid-feedback">
+                                            Please enter bank name.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-floating-label col-12  px-2  mb-4">
+                                        <input type="text" class="form-control  col-12" style="padding-bottom: 4.5rem;"
+                                            id="BankAddress" placeholder=" " required>
+                                        <label for="BankAddress">Bank Address</label>
+                                        <div class="invalid-feedback">
+                                            Please enter bank address.
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="d-flex col-md-3 mt-3 mt-md-0 col-12 flex-column ">
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -374,7 +572,71 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+            //  const pillsprofiletab = document.getElementById('pill-profile-tab');
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault()
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                                event.preventDefault()
+                                document.getElementById('pills-profile-tab').removeAttribute('disabled');
+                                document.getElementById('pills-profile-tab').click();
+                           
+                          
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+    
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation2')
+                //  const pillsprofiletab = document.getElementById('pill-profile-tab');
+    
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            event.preventDefault()
+                            if (!form.checkValidity()) {
+    
+                                event.stopPropagation()
+                            } else {
+    
+                                document.getElementById('Continue2').addEventListener('click', function () {
+                                    document.getElementById('pills-contact-tab').removeAttribute('disabled');
+                                    document.getElementById('pills-contact-tab').click();
+                                });
+                            }
+    
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+    
+
     <script src="js/main.js"></script>
+
+
 
 </body>
 

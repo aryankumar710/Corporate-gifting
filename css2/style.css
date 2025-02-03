@@ -1553,6 +1553,7 @@ p {
     margin-right: auto;
 }
 
+/* Buyer Form Filling page */
 
 .form-floating-label {
     position: relative;
@@ -1590,7 +1591,7 @@ p {
 
   .form-select{
     border:2px solid var(--text-color);
-    padding: 1rem 0.5rem 0.5rem;
+    padding: 0.75rem 0.5rem 0.75rem;
   }
 
   .form-filling option{
@@ -1614,3 +1615,52 @@ p {
     object-fit: cover;
     border-radius: 0.25rem;
   }
+
+  /* Who we are */
+
+  .introduction-images img{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+
+  .how-we-do-it .cutout-image {
+    aspect-ratio: 1/1;
+    background-image: url('../images/about\ img\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-do-it .cutout-image .background {
+    background-color: white; /* Keep the background white */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.how-we-do-it .cutout-image .text {
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 5.625rem;
+    width: auto;
+    height: auto;
+    line-height:5rem;
+    position: absolute;
+    z-index: 10;
+    
+    /* Cutout Effect */
+    color: transparent;
+    background-image: url('../images/about\ img\ 1.png'); /* Use the same image */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    mix-blend-mode: multiply; /* Adjust if needed (try screen, difference, etc.) */
+}
