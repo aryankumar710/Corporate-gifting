@@ -1,8 +1,9 @@
 :active,
 :hover,
 :focus {
-    outline: 0 !important;
+    outline:unset;
     outline-offset: 0;
+    box-shadow: none;
 }
 
 html {
@@ -155,6 +156,54 @@ li:hover {
     border-radius: 0.25rem;
 }
 
+.form-filling .nav-link .active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.form-filling .nav-link{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.form-filling .nav-link:hover{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+.form-filling .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+
+.form-filling .nav-link:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+
 .wrapper {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
@@ -167,8 +216,8 @@ li:hover {
 }
 
 .breadcrumb-wrapper {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--tertiary-color);
 }
 
@@ -1433,6 +1482,24 @@ p {
     font-weight: bold;
 }
 
+.form-filling .add-image{
+    width: 5.25rem;
+    height: 5.25rem;
+    border: 2px solid var(--text-color);
+    border-radius: 0.25rem;
+  }
+
+  .form-filling .add-image p{
+   color: var(--text-color);
+  }
+
+  .form-filling .image{
+    width: 5.25rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+
 .image-preview {
     display: flex;
     gap: 10px;
@@ -1509,12 +1576,33 @@ p {
 
 /* Help Page */
 
-.help-tabs li a{
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
     color: #0068C8;
-    background-color: #f5f9ff;
+    background: #f5f9ff;
+    cursor: pointer;
 }
 
-.tab-content h2 {
+.sidebar a.active {
+    background: #0068C8;
+    color: white;
+}
+
+.content {
+    flex: 1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2{
     font-family: Catamaran;
     font-size: 36px;
     font-weight: 600;
@@ -1540,4 +1628,240 @@ p {
     border-bottom: 3px solid #0068C8;
     transform: translateY(17px);
     width: 3.5rem;
+}
+
+
+/* Media Page */
+
+.activity {
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 6rem;
+}
+
+.trades {
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 8.5rem;
+}
+
+.conference {
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 9rem;
+}
+
+
+/* Partner with us */
+
+.intro-extra-line {
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 9.5rem;
+}
+
+.intro p{
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #666666;
+}
+
+.why-become-partners-extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 17rem;
+}
+
+.partners-points h5{
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0B0B0B;
+}
+
+.partners-with-us-extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 19rem;
+}
+
+.partner-with-us-extra-line{
+    border-bottom: 3px solid #0068C8;
+    transform: translateY(17px);
+    width: 11.5rem;
+}
+
+.form-select-partner{
+    width: 100%;
+    height: 44px;
+    color: #666666;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px){
+    .partners-points h5 {
+        margin-left: 15px;
+    }
+}
+
+
+/* Contact Us */
+
+.form-floating-label input {
+    border: 1px solid #ced4da;
+    color: #666666;
+    border-radius: 4px;
+}
+
+.info p{
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    text-align: justified;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin-left: 15px;
+}
+
+.info img{
+    width: 405px; 
+    height: 319px; 
+    object-fit: contain; 
+    text-align: center;
+}
+
+.info i{
+    width: 52px; 
+    height: 52px; 
+    border-radius: 40px;
+    background-color: #0B0B0B; 
+    color: white; 
+    text-align: center; 
+    font-size: x-large; 
+    padding-top: 10px;
+}
+
+
+/* Buyer Form Filling page */
+
+.form-floating-label {
+    position: relative;
+  }
+
+  .form-floating-label input {
+    border: 2px solid var(--text-color);
+    border-radius: 0.25rem;
+    padding: 1rem 0.5rem 0.5rem;
+  }
+
+  .form-floating-label label {
+    position: absolute;
+    top: 1.25rem;
+    left: 1rem;
+    transform: translateY(-30%);
+    background-color: var(--white-color);
+    padding: 0 0.3125rem;
+    transition: 0.2s ease all;
+    color: var(--text-color);
+  }
+
+  .form-floating-label input:focus ~ label,
+  .form-floating-label input:not(:placeholder-shown) ~ label {
+    top: -0.625rem;
+    margin-left: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--black-color);
+  }
+
+  .form-floating-label input:focus{
+    border:2px solid var(--text-color);
+    box-shadow: none;
+  }
+
+  .form-select{
+    border:2px solid var(--text-color);
+    padding: 0.75rem 0.5rem 0.75rem;
+  }
+
+  .form-filling option{
+    transform: translateY(-50%);
+  }
+
+  .form-filling .add-image{
+    width: 5.25rem;
+    height: 5.25rem;
+    border: 2px solid var(--text-color);
+    border-radius: 0.25rem;
+  }
+
+  .form-filling .add-image p{
+   color: var(--text-color);
+  }
+
+  .form-filling .image{
+    width: 5.25rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+
+  /* Who we are */
+
+  .introduction-images img{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+  }
+
+  .how-we-do-it .cutout-image {
+    aspect-ratio: 1/1;
+    background-image: url('../images/about\ img\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-do-it .cutout-image .background {
+    background-color: white; /* Keep the background white */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.how-we-do-it .cutout-image .text {
+    font-family: "Catamaran", serif;
+    font-weight: 600;
+    font-size: 5.625rem;
+    width: auto;
+    height: auto;
+    line-height:5rem;
+    position: absolute;
+    z-index: 10;
+    
+    /* Cutout Effect */
+    color: transparent;
+    background-image: url('../images/about\ img\ 1.png'); /* Use the same image */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    mix-blend-mode: multiply; /* Adjust if needed (try screen, difference, etc.) */
 }

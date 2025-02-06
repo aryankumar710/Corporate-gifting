@@ -36,7 +36,67 @@
 </head>
 
 <body>
+ <!-- Login page -->
 
+ <div id="overlayss" onclick="closePopupss()"></div>
+
+ <div id="popupss" class="container-fluid p-0">
+   <div class="row g-0">
+     <div class="popup-left col-12 col-md-6"></div>
+     <div class="popup-right col-12 col-md-6">
+       <span class="close-btn" onclick="closePopupss()">&times;</span>
+       <h2>Login</h2>
+       <form>
+         <div class="input-container">
+           <input type="email" id="exchangeIcon" placeholder="Email" required>
+           
+         </div>
+         <div class="input-container">
+           <input type="password" id="passwordss" placeholder="Password" required>
+           <i class="fa fa-eye" id="togglePasswordss" aria-hidden="true"></i>
+         </div>
+
+        <div class="text-end">
+         <a href="#">Forgot Password?</a>
+        </div>
+         
+         <button type="submit">Log In</button>
+       </form>
+       <p>Don't have account? <a onclick="openPopup()">Sign Up</a></p>
+     </div>
+   </div>
+ </div>
+
+ <!-- signup page -->
+ <div id="overlay" onclick="closePopup()"></div>
+
+ <div id="popup" class="container-fluid p-0">
+   <div class="row g-0">
+     <div class="popup-left col-12 col-md-6"></div>
+     <div class="popup-right col-12 col-md-6">
+       <span class="close-btn" onclick="closePopup()">&times;</span>
+       <h2>Register</h2>
+       <form>
+         <div class="input-container">
+           <input type="text" placeholder="Name" required>
+         </div>
+         <div class="input-container">
+           <input type="email" placeholder="Email" required>
+         </div>
+         <div class="input-container">
+           <input type="password" id="password" placeholder="Password" required>
+           <i class="fa fa-eye" id="togglePassword" aria-hidden="true"></i>
+         </div>
+         <div class="input-container">
+           <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+           <i class="fa fa-eye" id="toggleConfirmPassword" aria-hidden="true"></i>
+         </div>
+         <button type="submit">Sign Up</button>
+       </form>
+       <p>Already have an account? <a onclick="openPopups()">Sign In</a></p>
+     </div>
+   </div>
+ </div>
   <!--Header-->
 
   <header>
@@ -57,7 +117,7 @@
           <div class="d-flex justify-content-between flex-column flex-lg-row" style="width: 100%;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ms-2 me-2">
-                <a class="nav-link text-white active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link text-white active"  aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link text-white" href="#">WHO WE ARE</a>
@@ -70,6 +130,9 @@
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link text-white" href="#">POST BUY REQUEST</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="#">BRANDS</a>
               </li>
             </ul>
             <div class="d-flex flex-column flex-lg-row">
