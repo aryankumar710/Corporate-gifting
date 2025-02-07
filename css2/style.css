@@ -16,7 +16,7 @@ html {
     --secondary-color: #0054A1;
     --tertiary-color: #F5F9FF;
     --white-color: #fff;
-    --text-color: #999999;
+    --text-color: #666666;
     --black-color: #0b0b0b;
     --red-color: #E70000;
     --green-color: #00A651;
@@ -161,7 +161,7 @@ li:hover {
     background-color: var(--primary-color);
     border-radius: 0;
     font-family: "Catamaran", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 0px;
 }
@@ -171,7 +171,7 @@ li:hover {
     background-color: var(--tertiary-color);
     border-radius: 0;
     font-family: "Catamaran", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 0px;
 }
@@ -182,7 +182,7 @@ li:hover {
     border-color: var(--secondary-color);
     border-radius: 0;
     font-family: "Catamaran", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 0px;
 }
@@ -192,7 +192,7 @@ li:hover {
     border-color: var(--secondary-color);
     border-radius: 0;
     font-family: "Catamaran", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25rem;
     margin-bottom: 0px;
 }
@@ -203,6 +203,58 @@ li:hover {
     box-shadow: none;
 }
 
+
+.dashboard .nav-link .active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0px;
+    
+}
+
+.dashboard .nav-link{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0px;
+}
+
+.dashboard .nav-link:hover{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0px;
+}
+.dashboard .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 0;
+    font-family: "Catamaran", serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0px;
+}
+
+.dashboard .nav-link:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
 
 .wrapper {
     padding-top: 3.75rem;
@@ -1626,41 +1678,105 @@ p {
 
   .how-we-do-it .cutout-image {
     aspect-ratio: 1/1;
-    background-image: url('../images/about\ img\ 1.png');
+    background-image: url('../images/experience.png');;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .how-we-do-it .cutout-image .background {
-    background-color: white; /* Keep the background white */
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--tertiary-color); 
+    width: 90%;
+    height: 83%;
     position: relative;
 }
 
 .how-we-do-it .cutout-image .text {
     font-family: "Catamaran", serif;
     font-weight: 600;
-    font-size: 5.625rem;
-    width: auto;
-    height: auto;
-    line-height:5rem;
+    font-size: 9.375rem;
+    line-height:5.75rem;
     position: absolute;
-    z-index: 10;
-    
-    /* Cutout Effect */
+    margin-bottom:  5.5rem;
+    z-index: 10;      
     color: transparent;
-    background-image: url('../images/about\ img\ 1.png'); /* Use the same image */
+    background-image: url('../images/experience.png');
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
     background-clip: text;
-    mix-blend-mode: multiply; /* Adjust if needed (try screen, difference, etc.) */
+    mix-blend-mode: multiply; /* Cutout Effect */
+}
+
+.about-us-introduction p , .how-we-do-it p, .mission-vision p{
+    color: var(--text-color);
+}
+
+
+/* Dashboard-dashboard */
+
+.nav-link:hover .svg-color path {
+    fill: var(--white-color) !important; /* Change to the desired active color */
+}
+.nav-link.active .svg-color path {
+    fill: var(--white-color) !important; /* Change to the desired active color */
+}
+
+.nav-link .svg-color path {
+    fill: var(--primary-color) !important; /* Default color */
+}
+
+.nav-link:hover .svg-border-color path{
+    stroke: var(--white-color) !important;
+}
+.nav-link.active .svg-border-color path{
+    stroke: var(--white-color) !important;
+}
+.nav-link .svg-border-color path{
+    stroke: var(--primary-color) !important;
+}
+
+
+.dashboard .inquiry-box{
+    background-color: var(--white-color);
+    border-radius: 0.625rem;    
+}
+
+.dashboard .graph-box1 div{
+    background-color: var(--green-color);
+    width: 14px;
+    height: 14px;
+}
+
+.dashboard .graph-box2 div{
+    background-color: orange;
+    width: 14px;
+    height: 14px;
+}
+
+.dashboard .graph-box3 div{
+    background-color: var(--red-color);
+    width: 14px;
+    height: 14px;
+}
+
+.dashboard .graph-box1 p{
+    color: var(--green-color); 
+    line-height: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard .graph-box2 p{
+    color: orange; 
+    line-height: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard .graph-box3 p{
+    color: var(--red-color); 
+    line-height: 0;
+    font-size: 14px;
+    font-weight: 600;
 }
