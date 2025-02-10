@@ -1744,39 +1744,81 @@ p {
 
 .dashboard .graph-box1 div{
     background-color: var(--green-color);
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
 }
 
 .dashboard .graph-box2 div{
     background-color: orange;
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
 }
 
 .dashboard .graph-box3 div{
     background-color: var(--red-color);
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
 }
 
 .dashboard .graph-box1 p{
     color: var(--green-color); 
     line-height: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
 }
 
 .dashboard .graph-box2 p{
     color: orange; 
     line-height: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
 }
 
 .dashboard .graph-box3 p{
     color: var(--red-color); 
     line-height: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
 }
+
+.product-tab .nav-link{
+    color: var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.product-tab .nav-link.active{
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 50%;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-tab .nav-link:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 50%;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dasboard-product-list img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.dasboard-product-list h6{
+    color: var(--text-color);
+}
+
+.dasboard-product-list:hover img{
+    border: 2px solid var(--primary-color);
+}
+
+.dasboard-product-list:hover h4{
+    color: var(--primary-color);
+}
+
+
+
