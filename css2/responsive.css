@@ -36,6 +36,7 @@
     html{
         font-size: 14px;
     }
+}
 
 @media (max-width:576px){
     html{
@@ -43,7 +44,7 @@
     }
     
 }
-}
+
 
 @media (max-width: 768px) {
     .button-container {

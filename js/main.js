@@ -1,6 +1,10 @@
 
 //login page
 
+
+
+
+
 function openPopups() {
     document.getElementById('overlayss').style.display = 'block';
     document.getElementById('popupss').style.display = 'block';
@@ -49,155 +53,46 @@ function openPopups() {
       this.classList.toggle('fa-eye-slash');
     });
 
+    document.getElementById('toggleOldPassword').addEventListener('click', function () {
+        const passwordInput = document.getElementById('OldPassword');
+        const type = passwordInput.type === 'password' ? 'text' : 'password';
+        passwordInput.type = type;
+        this.classList.toggle('fa-eye-slash');
+      });
+  
+      document.getElementById('toggleNewPassword').addEventListener('click', function () {
+        const confirmPasswordInput = document.getElementById('NewPassword');
+        const type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+        confirmPasswordInput.type = type;
+        this.classList.toggle('fa-eye-slash');
+      });
+
+      document.getElementById('toggleReenterPassword').addEventListener('click', function () {
+        const confirmPasswordInput = document.getElementById('ReenterPassword');
+        const type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+        confirmPasswordInput.type = type;
+        this.classList.toggle('fa-eye-slash');
+      });
+
 //index page
 
-$(document).ready(function () {
-    $('.category-filter').owlCarousel({
-        loop: true,
-        margin: 10,
-        //nav: true,
-        dots: false,
-        //autoplay: true,     
-        // autoplayTimeout: 3000, 
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            }, 
-            1000: {
-                items: 5
-            }
-        }
-    })
-    $('.tradeshow-prev').click(function () {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-    });
-
-    // Custom navigation for next button
-    $('.tradeshow-next').click(function () {
-        $('.owl-carousel').trigger('next.owl.carousel');
-    });
-})
-
-$(document).ready(function () {
-    $('.categorycarousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        //nav: true,
-        dots: false,
-        //autoplay: true,     
-        // autoplayTimeout: 3000, 
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 4
-            },
-            1000: {
-                items: 6
-            }
-        }
-    })
-    $('.owl-prev').click(function () {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-    });
-
-    // Custom navigation for next button
-    $('.owl-next').click(function () {
-        $('.owl-carousel').trigger('next.owl.carousel');
-    });
-})
 
 
 
-$(document).ready(function () {
-    $('.testimonycarousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        //nav: true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    })
-
-})
-
-
-$(document).ready(function () {
-    $('.blogcarousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        //nav: true,
-        dots: false,
-        //autoplay: true,     
-        // autoplayTimeout: 3000, 
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    })
-    $('.owl-prevll').click(function () {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-    });
-
-    // Custom navigation for next button
-    $('.owl-nextll').click(function () {
-        $('.owl-carousel').trigger('next.owl.carousel');
-    });
-})
 
 
 
-$(document).ready(function () {
-    $('.tradeshowcrousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        //nav: true,
-        dots: false,
-        //autoplay: true,     
-        // autoplayTimeout: 3000, 
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
-    $('.tradeshow-prev').click(function () {
-        $('.owl-carousel').trigger('prev.owl.carousel');
-    });
 
-    // Custom navigation for next button
-    $('.tradeshow-next').click(function () {
-        $('.owl-carousel').trigger('next.owl.carousel');
-    });
-})
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -262,6 +157,7 @@ $(document).ready(function () {
     });
 
 })
+
 
 
 document.getElementById("myButton").addEventListener("click", function () {

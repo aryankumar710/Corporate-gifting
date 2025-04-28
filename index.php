@@ -345,7 +345,7 @@
             </div>
             <h3>1000 INR</h3>
             <div class="d-flex flex-column">
-              <a href="" class="btn  btn-md btn-primary mb-1" type="button">Send Enquiry</a>
+              <a href="#category-item4" class="btn  btn-md btn-primary mb-1" type="button">Send Enquiry</a>
               <a href="ProductDetail.html" class="btn  btn-md btn-outline-primary mt-1" type="button">Product
                 Detail</a>
             </div>
@@ -1377,6 +1377,129 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+    $('.categorycarousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        //nav: true,
+        dots: false,
+        //autoplay: true,     
+        // autoplayTimeout: 3000, 
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 6
+            }
+        }
+    })
+    $('.owl-prev').click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+
+    // Custom navigation for next button
+    $('.owl-next').click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel');
+    });
+})
+
+
+    </script>
+
+    <script>
+      $(document).ready(function () {
+    $('.testimonycarousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        //nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+
+})
+    </script>
+
+    <script>
+      $(document).ready(function () {
+    $('.blogcarousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        //nav: true,
+        dots: false,
+        //autoplay: true,     
+        // autoplayTimeout: 3000, 
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.owl-prevll').click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+
+    // Custom navigation for next button
+    $('.owl-nextll').click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel');
+    });
+})
+    </script>
+
+    <script>
+      $(document).ready(function () {
+    $('.tradeshowcrousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        //nav: true,
+        dots: false,
+        //autoplay: true,     
+        // autoplayTimeout: 3000, 
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    $('.tradeshow-prev').click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+
+    // Custom navigation for next button
+    $('.tradeshow-next').click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel');
+    });
+})
+    </script>
     
 </body>
 

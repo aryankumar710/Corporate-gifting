@@ -11,6 +11,15 @@ html {
     font-size: 16px;
 }
 
+   
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #d2d2d2 var(--tertiary-color); 
+    }
+
+  
+
+   
 :root {
     --primary-color: #0068C8;
     --secondary-color: #0054A1;
@@ -79,6 +88,7 @@ p {
     font-size: 1rem;
     line-height: 1.625rem;
     margin-bottom: 0px;
+    color: var(--text-color);
 }
 
 a {
@@ -875,7 +885,7 @@ h1 {
 }
 
 .gap-product-detail2 .quantity h6,
-p {
+.gap-product-detail2 .quantity p {
     color: var(--black-color);
 }
 
@@ -1821,4 +1831,82 @@ p {
 }
 
 
+.lead-tab .nav-link{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
 
+.lead-tab .nav-link.active{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius:4px;
+}
+
+.lead-tab .nav-link:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius:4px;
+}
+
+.truncate-2 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 5em; /* Adjust based on font-size */
+    white-space: normal;
+  }
+
+  .message-detail h6{
+    font-size: 0.875rem;
+  }
+
+  .select-cities{
+    background-color: var(--tertiary-color);
+    border-radius: 0.025rem;
+  }
+
+
+.bg-primary{
+    background-color: var(--tertiary-color) !important;
+    color: var(--primary-color);
+    border-radius: 0.025rem;
+}
+
+.btn-close{
+    color: var(--primary-color) !important;
+}
+
+
+
+
+  .dashboard .add-image{
+    width: 5.25rem;
+    height: 5.25rem;
+    border: 2px solid var(--text-color);
+    border-radius: 0.25rem;
+  }
+
+  .dashboard .add-image p{
+   color: var(--text-color);
+  }
+
+  .dashboard .image{
+    width: 5.25rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+
+  .dashboard .edit{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .dashboard .delete{
+    color: var(--red-color);
+    font-size: 1.2rem;
+  }

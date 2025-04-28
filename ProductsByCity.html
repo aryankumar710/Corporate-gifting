@@ -566,6 +566,38 @@
 
   <script src="js/main.js"></script>
 
+  <script>
+    $(document).ready(function () {
+    $('.category-filter').owlCarousel({
+        loop: true,
+        margin: 10,
+        //nav: true,
+        dots: false,
+        //autoplay: true,     
+        // autoplayTimeout: 3000, 
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            }, 
+            1000: {
+                items: 5
+            }
+        }
+    })
+    $('.tradeshow-prev').click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+
+    // Custom navigation for next button
+    $('.tradeshow-next').click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel');
+    });
+})
+  </script>
+
 </body>
 
 </html>
