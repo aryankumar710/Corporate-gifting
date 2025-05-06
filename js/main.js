@@ -1,4 +1,5 @@
 
+
 //login page
 
 
@@ -191,44 +192,4 @@ document.getElementById("n-btn").addEventListener("click", function () {
         this.classList.add("prev-next-clicked-btn");
     }
 })
-
-// JavaScript to handle page switching
-let currentPage = 1;
-const totalPages = 4;
-
-function showPage(page) {
-    // Hide all pages
-    for (let i = 1; i <= totalPages; i++) {
-        document.getElementById("page-" + i).style.display = "none";
-        document.getElementById("page-" + i + "-link").classList.remove("active");
-    }
-    // Show the current page
-    document.getElementById("page-" + page).style.display = "block";
-    document.getElementById("page-" + page + "-link").classList.add("active");
-}
-
-// Event listeners for pagination buttons
-document.getElementById("prev-page").addEventListener("click", function () {
-    if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage);
-    }
-});
-
-document.getElementById("next-page").addEventListener("click", function () {
-    if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage);
-    }
-});
-
-for (let i = 1; i <= totalPages; i++) {
-    document.getElementById("page-" + i + "-link").addEventListener("click", function () {
-        currentPage = i;
-        showPage(currentPage);
-    });
-}
-// Initialize the first page
-showPage(currentPage);
-
 

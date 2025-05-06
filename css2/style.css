@@ -343,6 +343,27 @@ body {
     transition: all 0.3s ease-out;
 }
 
+.dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+  }
+
+  .dropdown-submenu.show > .dropdown-menu {
+    display: block;
+  }
+
+  /* Optional: cursor styling */
+  .dropdown-submenu > a {
+    cursor: pointer;
+  }
+
 .hero {
     background-image: url('../images/Frame\ 8.png');
     background-repeat: no-repeat;
@@ -478,6 +499,8 @@ h1 {
 .product-box .send-enquiry-btn {
     margin-top: 1.75rem;
 }
+
+
 
 .Arrival-Famous .image-large {
     width: 100%;
