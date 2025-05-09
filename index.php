@@ -36,7 +36,7 @@
             <div class="d-flex align-items-center  px-3">
               <div>
                 <h3 class="col-md-10">Looking for product</h3>
-                <a href="buyerpage.php" class="btn  btn-outline-primary btn-sm px-5 mt-2 " type="button">Post Buy
+                <a href="buyerpage.php" class="btn  btn-outline-primary btn-md px-5 mt-2 " type="button">Post Buy
                   Requirement</a>
               </div>
             </div>

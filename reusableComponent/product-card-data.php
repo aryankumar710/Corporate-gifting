@@ -5,60 +5,60 @@ $cards = [
         'sellername' => 'Aryan',
         'productname' => 'Book',
         'productprice' => '1000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
         'productimage' => 'images/Product-img2.jpeg',
         'sellername' => 'Chandresh',
         'productname' => 'Pen',
         'productprice' => '2000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
-       'productimage' => 'images/Product-img3.jpeg',
+        'productimage' => 'images/Product-img3.jpeg',
         'sellername' => 'Tushar',
         'productname' => 'Bag',
         'productprice' => '3000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
-       'productimage' => 'images/Product-img4.jpeg',
+        'productimage' => 'images/Product-img4.jpeg',
         'sellername' => 'Ritik',
         'productname' => 'Calendar',
         'productprice' => '4000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
         'productimage' => 'images/Product-img5.jpeg',
         'sellername' => 'Aryan',
         'productname' => 'Book',
         'productprice' => '1000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
         'productimage' => 'images/Product-img6.jpeg',
         'sellername' => 'Chandresh',
         'productname' => 'Pen',
         'productprice' => '2000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
-       'productimage' => 'images/Product-img7.jpeg',
+        'productimage' => 'images/Product-img7.jpeg',
         'sellername' => 'Tushar',
         'productname' => 'Bag',
         'productprice' => '3000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
     [
-       'productimage' => 'images/Product-img8.jpeg',
+        'productimage' => 'images/Product-img8.jpeg',
         'sellername' => 'Ritik',
         'productname' => 'Calendar',
         'productprice' => '4000 INR',
-        'producturl' => 'https://example.com/card1'
+        'producturl' => 'ProductDetail.php'
     ],
-   
-   
-  
+
+
+
     // ... more cards
 ];
 

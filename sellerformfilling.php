@@ -294,6 +294,99 @@
                                         <button class="btn btn-primary" id="Continue2"
                                             type="submit">Continue</button>
                                     </div>
+                                </div>                                <div class="col-12 d-flex flex-column my-4 gap-4">
+                                    <div>
+                                        <div class="top-heading pb-3">
+                                            <h4>Add Location Preference for Selling</h4>
+                                        </div>
+                                        <div>
+                                            <hr class="mt-0">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5>Select States for Business</h5>
+                                        <div class="input-group">
+                                            <div class="form-control d-flex flex-wrap p-2" id="chip-container-states">
+                                                <input type="text" id="chip-input-states"
+                                                    class="form-control border-0 flex-grow-1" placeholder="Select State"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please select your preferred states for business.
+                                                </div>
+                                            </div>
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"></button>
+                                            <ul class="dropdown-menu dropdown-menu-end" id="chip-options-states">
+                                                <li><a class="dropdown-item" href="#" data-value="Delhi">Delhi</a></li>
+                                                <li><a class="dropdown-item" href="#" data-value="Uttar Pradesh">Uttar
+                                                        Pradesh</a></li>
+                                                <li><a class="dropdown-item" href="#"
+                                                        data-value="Uttrakhand">Uttrakhand</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#" data-value="Bihar">Bihar</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-3 select-cities p-3">
+                                        <!-- Bihar Cities -->
+                                        <div>
+                                            <h6>Select Cities for Business in Bihar</h6>
+                                            <div class="input-group">
+                                                <div class="form-control d-flex flex-wrap p-2"
+                                                    id="chip-container-bihar">
+                                                    <input type="text" id="chip-input-bihar"
+                                                        class="form-control border-0 flex-grow-1"
+                                                        placeholder="Select City" required>
+                                                    <div class="invalid-feedback">
+                                                        Please select your preferred cities for business.
+                                                    </div>
+
+                                                </div>
+                                                <button class="btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                <ul class="dropdown-menu dropdown-menu-end" id="chip-options-bihar">
+                                                    <li><a class="dropdown-item" href="#" data-value="Patna">Patna</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#" data-value="Gaya">Gaya</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="Bhagalpur">Bhagalpur</a></li>
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="Muzaffarpur">Muzaffarpur</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- UP Cities -->
+                                        <div>
+                                            <h6>Select Cities for Business in Uttar Pradesh</h6>
+                                            <div class="input-group">
+                                                <div class="form-control d-flex flex-wrap p-2" id="chip-container-up">
+                                                    <input type="text" id="chip-input-up"
+                                                        class="form-control border-0 flex-grow-1"
+                                                        placeholder="Select City" required>
+                                                    <div class="invalid-feedback">
+                                                        Please select your preferred cities for business.
+                                                    </div>
+
+                                                </div>
+                                                <button class="btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                <ul class="dropdown-menu dropdown-menu-end" id="chip-options-up">
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="Lucknow">Lucknow</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-value="Kanpur">Kanpur</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="Varanasi">Varanasi</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-value="Noida">Noida</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </form>
                         </div>

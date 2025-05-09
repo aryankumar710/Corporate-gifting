@@ -121,7 +121,7 @@
                 <a class="nav-link text-white active" aria-current="page" href="#"></a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link text-white" href="Whoweare.php">WHO WE ARE</a>
+                <a class="nav-link text-white" href="Whoweare.php">ABOUT US</a>
               </li>
 
               <li class="nav-item mx-2">
@@ -131,7 +131,10 @@
                 <a class="nav-link text-white" href="buyerpage.php">POST BUY REQUEST</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link text-white" href="#">BRANDS</a>
+                <a class="nav-link text-white" href="brand.php">BRANDS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-white" href="blogpage.php">BLOGS</a>
               </li>
             </ul>
             <div class="d-flex flex-column flex-lg-row">

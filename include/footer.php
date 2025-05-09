@@ -31,12 +31,14 @@
             <a class="footernav nav-link" href="blogpage.php">Blog</a>
             <a class="footernav nav-link" href="contactUs.php">Contact Us</a>
             <a class="footernav nav-link" href="Userdashboard.php">Dashboard</a>
-            <a class="footernav nav-link" href="#">Privacy & Policy</a>
+            <a class="footernav nav-link" href="partnerwithus.php">Partner With Us</a>
           </div>
           <div class="col-6">
-            <a class="footernav nav-link" href="#">Help Centre</a>
+            <a class="footernav nav-link" href="help.php">Help Centre</a>
             <a class="footernav nav-link" href="buyerpage.php">For Buyers</a>
             <a class="footernav nav-link" href="sellerpage.php">For Sellers</a>
+            <a class="footernav nav-link" href="tradeshow.php">Tradeshow</a>
+            <a class="footernav nav-link" href="media.php">Media</a>
           </div>
         </div>
       </div>
@@ -45,10 +47,12 @@
         <a class="footernav nav-link" href="blogpage.php">Blog</a>
         <a class="footernav nav-link" href="contactUs.php">Contact Us</a>
         <a class="footernav nav-link" href="Userdashboard.php">Dashboard</a>
-        <a class="footernav nav-link" href="#">Privacy & Policy</a>
-        <a class="footernav nav-link" href="#">Help Centre</a>
+        <a class="footernav nav-link" href="partnerwithus.php">Partner With Us</a>
+        <a class="footernav nav-link" href="help.php">Help Centre</a>
         <a class="footernav nav-link" href="buyerpage.php">For Buyers</a>
         <a class="footernav nav-link" href="sellerpage.php">For Sellers</a>
+        <a class="footernav nav-link" href="tradeshow.php">Tradeshow</a>
+        <a class="footernav nav-link" href="media.php">Media</a>
       </div>
     </div>
   </div>

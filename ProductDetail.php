@@ -166,7 +166,7 @@
     <div>
       <hr class="mt-0">
     </div>
-    <div class="row">
+    <div class="row ">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -560,7 +560,7 @@
                 </svg>Malviya Nagar, Delhi, 201015</p>
             </div>
           </div>
-          <div class="d-flex my-4">
+          <div class="d-flex flex-md-row flex-column my-4">
             <div class="d-flex flex-column gap-3 ">
               <div>
                 <h5>GST</h5>
@@ -575,7 +575,7 @@
                 <p>+91 8299314643</p>
               </div>
             </div>
-            <div class="d-flex flex-column gap-3 ms-5">
+            <div class="d-flex flex-column gap-3 ms-md-5 mt-3 mt-md-0">
               <div>
                 <h5>Member Since</h5>
                 <p>2001</p>

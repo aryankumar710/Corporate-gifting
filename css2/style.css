@@ -1933,3 +1933,30 @@ h1 {
     color: var(--red-color);
     font-size: 1.2rem;
   }
+
+  .brand:hover{
+    border-bottom: #0054A1 2px solid;   
+    color: var(--secondary-color);
+
+  }
+ .brand-box a:hover{
+    border-bottom: #0054A1 2px solid;   
+    color: var(--secondary-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  
+ 
+
+  .brand-image1 {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  .brand-image2 {
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
