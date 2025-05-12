@@ -95,7 +95,7 @@
             <div class="col-md-6">
                 <div class="product-form-container">
                     <h3>Sell your 1st product</h3>
-                    <form>
+                    <form class="col-12 d-flex flex-wrap needs-validation" novalidate>
                       <div class="form-floating-label col-12 mt-4">
                         <input type="text" class="form-control" id="businessemail" placeholder="" required>
                         <label for="businessemail">Business Email</label>

@@ -86,7 +86,7 @@
             <div class="col-md-6">
                 <div class="product-form-container2">
                     <h3>Buy Requirement</h3>
-                    <form>
+                    <form >
                       <div class="form-floating-label col-12 mt-4">
                         <input type="text" class="form-control" id="name" placeholder="" required>
                         <label for="name">Full Name</label>
@@ -127,7 +127,7 @@
                         </div>
                       </div>
                         
-                      <button type="submit" class="btn btn-primary my-4 mx-auto px-5">Continue</button>
+                      <button type="submit" class="btn btn-primary my-4 mx-auto px-5">Submit</button>
                     </form>
                 </div>
             </div>

@@ -104,7 +104,7 @@
                                                 d="M8.00065 29.3337C7.26732 29.3337 6.63976 29.0728 6.11798 28.551C5.59621 28.0292 5.33487 27.4012 5.33398 26.667V5.33366C5.33398 4.60033 5.59532 3.97277 6.11798 3.45099C6.64065 2.92921 7.26821 2.66788 8.00065 2.66699H18.6673L26.6673 10.667V26.667C26.6673 27.4003 26.4064 28.0283 25.8847 28.551C25.3629 29.0737 24.7349 29.3345 24.0007 29.3337H8.00065ZM17.334 12.0003H24.0007L17.334 5.33366V12.0003Z"
                                                 fill="#0DC635" />
                                         </svg>
-                                        <a href="#" class="text-decoration-none ms-2">Read All</a>
+                                        <a href="#pills-leads" class="text-decoration-none ms-2" role="tabpanel" aria-labelledby="pills-leads-tab">Read All</a>
                                     </div>
                                     <div class="d-flex flex-column mt-4">
                                         <h5>Total Inquiries</h5>
@@ -2870,7 +2870,6 @@
     <script>
         (function () {
             'use strict'
-
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation3')
             //  const pillsprofiletab = document.getElementById('pill-profile-tab');
@@ -2881,7 +2880,6 @@
                     form.addEventListener('submit', function (event) {
                         event.preventDefault()
                         if (!form.checkValidity()) {
-
                             event.stopPropagation()
 
                         }

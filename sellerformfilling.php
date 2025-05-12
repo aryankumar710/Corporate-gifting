@@ -623,6 +623,45 @@
     })()
 </script>
 
+<script>
+        $(document).ready(function () {
+            function setupChipDropdown(dropdownId, containerId, inputId) {
+                $(`${dropdownId} .dropdown-item`).click(function (e) {
+                    e.preventDefault();
+                    let selectedText = $(this).data("value");
+
+                    if ($(containerId).find(`[data-value="${selectedText}"]`).length === 0) {
+                        $(containerId).prepend(`
+                            <span class="badge bg-primary me-2 p-2 d-flex align-items-center" >
+                                ${selectedText}
+                                <button type="button" class="btn-close  ms-2" aria-label="Close"></button>
+                            </span>
+                        `);
+
+                        // Update input field
+                        updateInputValue(containerId, inputId);
+                    }
+                });
+
+                $(containerId).on("click", ".btn-close", function () {
+                    $(this).parent().remove();
+                    updateInputValue(containerId, inputId);
+                });
+
+                function updateInputValue(container, input) {
+                    let values = $(container).find('.badge').map(function () {
+                        return $(this).data("value");
+                    }).get().join(", ");
+                    $(input).val(values);
+                }
+            }
+            // Setup for each section
+            setupChipDropdown("#chip-options-states", "#chip-container-states", "#chip-input-states");
+            setupChipDropdown("#chip-options-bihar", "#chip-container-bihar", "#chip-input-bihar");
+            setupChipDropdown("#chip-options-up", "#chip-container-up", "#chip-input-up");
+        });
+    </script>
+
 
 <script src="js/main.js"></script>
 
